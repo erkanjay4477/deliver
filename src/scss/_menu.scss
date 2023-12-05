@@ -1,0 +1,30 @@
+.menu{
+    &__caption{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__btn{
+        color: #222;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 16px 46px;
+        border-radius: 6px;
+        border: 1px solid rgba(97, 114, 131, 0.20);
+        &_active{
+            color: #fff;
+            background: $blue;
+            border: none;
+        }
+    }
+    &__content{
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+}
